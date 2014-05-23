@@ -1,0 +1,13 @@
+<div class="container" ng-model="phone">
+<legend>Add phone</legend>
+
+<div>Name:<input type="text" name="pname" ng-model="phone.PName"/></div>
+<div>Color:<input type="text" name="pcolor" ng-model="phone.color"/></div>
+<div class="container">Available:<input type="checkbox" name="avail" ng-model="phone.Available"></div></br>
+<div>Bluetooth<input type="checkbox" name="bt" ng-model="phone.Bluetooth"></div></br>
+<input type="hidden" ng-model='phone.id' />
+<div></div><button class="btn btn-success" ng-click="create(phone.id)">Save</button>
+<button class="btn btn-primary" ng-click="modify(phone.id)">Save</button>
+{{phone.PName}}
+</div>
+

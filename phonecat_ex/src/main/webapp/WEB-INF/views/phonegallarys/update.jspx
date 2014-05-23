@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_fiftyhrtz_phone_domain_PhoneGallary" modelAttribute="phoneGallary" path="/phonegallarys" versionField="Version" z="3XtkB1sKB9fEk085rImQQ71kxik=">
+        <field:input field="PName" id="c_com_fiftyhrtz_phone_domain_PhoneGallary_PName" z="h86VcdYQBlU2AQcrFEBQkOZrP2s="/>
+        <field:checkbox field="Bluetooth" id="c_com_fiftyhrtz_phone_domain_PhoneGallary_Bluetooth" z="sW8BiKTnwZdKEzWF6vIBtPVKTd0="/>
+        <field:input field="color" id="c_com_fiftyhrtz_phone_domain_PhoneGallary_color" z="fZ4Ak2Fk0eIGXLHyG+vA9o2fg+Q="/>
+        <field:checkbox field="Available" id="c_com_fiftyhrtz_phone_domain_PhoneGallary_Available" z="X3tPyWu+yp5ZkDDVpm77Uwfw2EU="/>
+    </form:update>
+</div>

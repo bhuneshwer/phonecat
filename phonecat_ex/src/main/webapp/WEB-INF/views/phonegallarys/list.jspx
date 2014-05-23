@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_fiftyhrtz_phone_domain_PhoneGallary" items="${phonegallarys}" z="nrFhzwfGsFWUWYsfWzuLJlV/aKw=">
+        <table:table data="${phonegallarys}" id="l_com_fiftyhrtz_phone_domain_PhoneGallary" path="/phonegallarys" z="whuApGalmkiGTGUl+ODc+S4QzmY=">
+            <table:column id="c_com_fiftyhrtz_phone_domain_PhoneGallary_PName" property="PName" z="5FpaG0ypgTKwjUvLPmYCcfSDPw4="/>
+            <table:column id="c_com_fiftyhrtz_phone_domain_PhoneGallary_Bluetooth" property="bluetooth" z="17uLrGzBirlEE+ylepLqJ0rfaq4="/>
+            <table:column id="c_com_fiftyhrtz_phone_domain_PhoneGallary_color" property="color" z="JPXhvOLe0bGjniMvyz5PD7Zj/VA="/>
+            <table:column id="c_com_fiftyhrtz_phone_domain_PhoneGallary_Available" property="available" z="HFHHRMW4mFeUZ1kux8acMeF03Gg="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,43 @@
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-03-04 15:13:22
+project --topLevelPackage com.fiftyhrtz.phone --projectName phonecat_ex --java 7 --packaging JAR
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-03-04 15:13:50
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-03-04 15:25:31
+jpa setup --database  MYSQL --provider HIBERNATE 
+entity jpa --class ~.domain.PhoneGallary
+field string --fieldName PName
+field boolean --fieldName Bluetooth 
+field string --fieldName color
+field boolean --fieldName Available
+json all
+web mvc setup
+web mvc all --package com.fiftyhrtz.phone.web
+quit
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-03-04 15:32:22
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-03-04 16:56:44
+focus --class ~.domain.PhoneGallary
+focus --class ~.domain.PhoneGallary
+web mvc json all 
+quit
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-03-04 16:59:04
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-03-06 11:59:17
+entity jpa --class ~.domain.LogUserRole 
+field string --fieldName roleName
+// [failed] field string --fieldName roleName
+test integration 
+// [failed] focus --class ~.domain.LogUser
+focus --class ~.domain.LogUserRole
+entity jpa --class ~.domain.LogUser
+field string --fieldName username
+field string --fieldName password
+field boolean --fieldName enabled
+focus --class ~.domain.LogUser
+// [failed] field boolean --fieldName enabled --notNull true
+entity jpa --class ~.domain.LogUser
+focus --class ~.domain.LogUser
+field boolean --fieldName enabled --notNull true
+field set --fieldName roles --type ~.domain.LogUserRole
+field string --fieldName username
+field string --fieldName password
+security setup
+perform tests
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-03-06 13:22:52

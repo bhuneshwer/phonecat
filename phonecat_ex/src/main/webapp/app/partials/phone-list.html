@@ -1,0 +1,42 @@
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span3">
+			<!--Sidebar content-->
+            <div>
+			Search: <input ng-model="query"> </div></br>
+			<div>Sort by: <select
+				ng-model="orderProp">
+				<option value="name">Alphabetical</option>
+				<option value="age">Newest</option>
+			</select></div>
+		</div>
+		<div class="span9">
+			<table class="table-striped tbody tr:nth-child(odd) th">
+				<thead class="table-bordered th">
+					<tr>
+						<th>Phone</th>
+						<th>Color</th>
+						<th>Available</th>
+						<th>Bluetooth</th>
+						<th></th>
+						<th><a href="#/Add" class="btn btn-info"><i class="icon-plus-sign icon-white"></i></a></th>
+					</tr>
+				</thead>
+				<tbody class="table tbody + tbody">
+					<tr ng-repeat="phone in phones | filter:query ">
+						<td><a href="#" target="_blank">{{phone.PName}}</a></td>
+						<td>{{phone.color}}</td>
+						<td>{{phone.Bluetooth | checkmark}}</td>
+						<td>{{phone.Available | checkmark}}</td>
+						<input type="hidden" ng-model='phone.id' />
+						<td><button ng-click="delPhone(phone.id)"
+								class="btn btn-danger"><i class="icon-trash icon-white"></i></button></td>
+						<td><a href="#/phones/{{phone.id}}" class="btn btn-primary"><i class="icon-pencil"></i></a></td>
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</div>
